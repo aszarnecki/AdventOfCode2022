@@ -89,7 +89,7 @@ def get_tournament_points(strategy_guide: list) -> int:
     return points
 
 
-with open("data", "r") as f:
+with open("data_test", "r") as f:
     raw_data = f.read().split("\n")
 print(f"Total score (OPPONENT:PLAYER): {get_tournament_points(raw_data)}")
 
